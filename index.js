@@ -31,7 +31,7 @@ app.post('/generate-image', async (req, res) => {
 
     console.log("Hugging Face üzerinden görsel üretiliyor, prompt:", prompt);
 
-    const modelId = "stabilityai/stable-diffusion-xl-base-1.0";
+    const modelId = "black-forest-labs/FLUX.1-schnell";
     const response = await fetch(
       `https://router.huggingface.co/hf-inference/models/${modelId}`,
       {
